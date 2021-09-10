@@ -14,17 +14,6 @@ const app = express();
 
 app.use(express.json())
 
-// mongoose.connect('mongodb+srv://gunamongouser:mondowntowngangsteR4@logincluster.vjvov.mongodb.net/RegisterDB?retryWrites=true&w=majority', 
-//     {
-//         userNewUrlParser: true,
-//         useUnifiedTopology: true
-//     },
-//     () => {
-//         console.log('Mongoose Is Connected')
-//     }
-// );
-
-
 mongoose.connect(User);
 mongoose.connection.on('open', () => {
     console.log('connected to mongoose')
